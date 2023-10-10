@@ -1,0 +1,10 @@
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\bin\Debug\MouseAutoApp.exe.config
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\bin\Debug\MouseAutoApp.exe
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\bin\Debug\MouseAutoApp.pdb
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.csproj.AssemblyReference.cache
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.Properties.Resources.resources
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.csproj.GenerateResource.cache
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.csproj.CoreCompileInputs.cache
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.exe
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.pdb
+D:\04_tmp\VS\Pro\MouseAutoApp\MouseAutoApp\MouseAutoApp\obj\Debug\MouseAutoApp.Form.resources
