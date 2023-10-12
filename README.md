@@ -10,6 +10,8 @@ To stop, press the [Timer Stop] button or close the app by pressing the × in th
 In addition, the settings are as follows, so please change them if necessary.
 By default, the interval between mouse operations on the PC is set to 30 seconds [30000ms] so that the screen saver does not operate.
 
+The application is configured to run on .NET 4.7.2.
+
 ## The build method is Visual Studio 2022 Community.
 How to provide detailed information.
 
