@@ -33,11 +33,17 @@
             this.OneMiniteTimer = new System.Windows.Forms.Timer(this.components);
             this.TimeIntervalTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.menuStrip2 = new System.Windows.Forms.MenuStrip();
+            this.MenuRight = new System.Windows.Forms.MenuStrip();
+            this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.versionToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.MenuRight.SuspendLayout();
             this.SuspendLayout();
             // 
             // BootOnOff
             // 
-            this.BootOnOff.Location = new System.Drawing.Point(260, 48);
+            this.BootOnOff.Location = new System.Drawing.Point(266, 22);
             this.BootOnOff.Name = "BootOnOff";
             this.BootOnOff.Size = new System.Drawing.Size(101, 23);
             this.BootOnOff.TabIndex = 0;
@@ -52,7 +58,7 @@
             // 
             // TimeIntervalTextBox
             // 
-            this.TimeIntervalTextBox.Location = new System.Drawing.Point(139, 55);
+            this.TimeIntervalTextBox.Location = new System.Drawing.Point(147, 22);
             this.TimeIntervalTextBox.Name = "TimeIntervalTextBox";
             this.TimeIntervalTextBox.Size = new System.Drawing.Size(100, 19);
             this.TimeIntervalTextBox.TabIndex = 1;
@@ -61,23 +67,70 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(29, 62);
+            this.label1.Location = new System.Drawing.Point(32, 29);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(95, 12);
             this.label1.TabIndex = 3;
             this.label1.Text = "Time Interval[ms]";
             // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Location = new System.Drawing.Point(0, 48);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(379, 24);
+            this.menuStrip1.TabIndex = 4;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // menuStrip2
+            // 
+            this.menuStrip2.Location = new System.Drawing.Point(0, 24);
+            this.menuStrip2.Name = "menuStrip2";
+            this.menuStrip2.Size = new System.Drawing.Size(379, 24);
+            this.menuStrip2.TabIndex = 5;
+            this.menuStrip2.Text = "menuStrip2";
+            // 
+            // MenuRight
+            // 
+            this.MenuRight.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.helpToolStripMenuItem});
+            this.MenuRight.Location = new System.Drawing.Point(0, 0);
+            this.MenuRight.Name = "MenuRight";
+            this.MenuRight.Size = new System.Drawing.Size(379, 24);
+            this.MenuRight.TabIndex = 6;
+            this.MenuRight.Text = "Help";
+            // 
+            // helpToolStripMenuItem
+            // 
+            this.helpToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.versionToolStripMenuItem});
+            this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
+            this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
+            this.helpToolStripMenuItem.Text = "Help";
+            // 
+            // versionToolStripMenuItem
+            // 
+            this.versionToolStripMenuItem.Name = "versionToolStripMenuItem";
+            this.versionToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.versionToolStripMenuItem.Text = "Version";
+            this.versionToolStripMenuItem.Click += new System.EventHandler(this.versionToolStripMenuItem_Click);
+            // 
             // Form
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(421, 88);
+            this.ClientSize = new System.Drawing.Size(379, 55);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.TimeIntervalTextBox);
             this.Controls.Add(this.BootOnOff);
+            this.Controls.Add(this.menuStrip1);
+            this.Controls.Add(this.menuStrip2);
+            this.Controls.Add(this.MenuRight);
+            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form";
             this.Text = "MouseAutoApp";
             this.WindowState = System.Windows.Forms.FormWindowState.Minimized;
+            this.MenuRight.ResumeLayout(false);
+            this.MenuRight.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -89,6 +142,11 @@
         private System.Windows.Forms.Timer OneMiniteTimer;
         private System.Windows.Forms.TextBox TimeIntervalTextBox;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.MenuStrip menuStrip2;
+        private System.Windows.Forms.MenuStrip MenuRight;
+        private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem versionToolStripMenuItem;
     }
 }
 

@@ -10,19 +10,19 @@ namespace MouseAutoApp
     public partial class Form : System.Windows.Forms.Form
     {
         // 追加 Start
-        [DllImport("user32.dll")]
+        [DllImport("user32.dll", SetLastError = true)]
         static extern uint SendInput(
-            uint nInputs, //INPUT構造体の数
-            INPUT[] pInputs, //INPUT構造体
-            int cbSize);   //INPUT構造体のサイズ
+            uint nInputs,       //INPUT構造体の数
+            INPUT[] pInputs,    //INPUT構造体
+            int cbSize);        //INPUT構造体のサイズ
         [StructLayout(LayoutKind.Sequential)]
-        struct INPUT    // 初期値はすべて0
+        struct INPUT    
         {
-            public int type; // 0:MOUSE 1:KEYBOARD
+            public int type;        // 0:MOUSE 1:KEYBOARD
             public MOUSEINPUT mi;
         }
         [StructLayout(LayoutKind.Sequential)]
-        struct MOUSEINPUT   // 初期値はすべて0
+        struct MOUSEINPUT   
         {
             public int dx;
             public int dy;
@@ -31,7 +31,7 @@ namespace MouseAutoApp
             public int time;
             public IntPtr dwExtraInfo;
         }
-        INPUT[] input = new INPUT[1];//イベントは1個だけ
+        INPUT[] input = new INPUT[1];//イベントはMouse用に1個だけ
         // 追加 End
         public Form()
         {
@@ -95,6 +95,12 @@ namespace MouseAutoApp
                 e.Handled = true;
             }
 
+        }
+
+        private void versionToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            // メッセージボックスでアプリのバージョンの表示する
+            MessageBox.Show("Version: 1.0.0 ");
         }
     }
 }
